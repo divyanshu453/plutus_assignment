@@ -1,0 +1,99 @@
+.section {
+  padding: 6rem 2rem;
+  background: var(--bg-primary);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.section h2 span {
+  color: var(--primary-yellow);
+}
+
+.comparisonTable {
+  margin-top: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.feature {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+}
+
+.logoCell {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.checkmark {
+  color: var(--success);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.crossmark {
+  color: var(--error);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .feature {
+    font-size: 0.85rem;
+  }
+}

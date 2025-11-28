@@ -1,0 +1,120 @@
+.header {
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.logoMoon {
+  font-size: 1.8rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary-yellow);
+  text-decoration: none;
+}
+
+.launchBtn {
+  background: var(--primary-yellow);
+  color: var(--bg-primary);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.launchBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(253, 185, 19, 0.3);
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex: none;
+    justify-content: flex-start;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .launchBtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
