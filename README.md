@@ -1,4 +1,6 @@
 # MoonEX — Trusted Multi-Chain DEX (Demo)
+LIVE LINK - https://plutusassignment.vercel.app/
+
 
 A small Next.js demo site built to showcase a multi-section landing page and a simple client-side news feed (crypto news) that fetches data from a third-party API. The project uses modern React, TypeScript, and CSS Modules for structured styling.
 
